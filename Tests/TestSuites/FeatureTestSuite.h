@@ -1664,8 +1664,8 @@ private:
                 Parameters childParams;
                 childParams.mCount = params.mCount - 1;
 
-                Theron::Framework &framework(GetFramework());
-                Recursor child(framework, childParams);
+                Theron::Framework &fw(GetFramework());
+                Recursor child(fw, childParams);
             }
         }
     };

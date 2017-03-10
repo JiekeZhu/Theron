@@ -30,7 +30,10 @@
 #elif THERON_MSVC
 
 // These are packaged with Theron, and provide stdint functionality for MSVC.
-#include <Standard/stdint.h>
+#if _MSC_VER < 1900
+#include <Standard/_stdint.h>
+#endif
+
 #include <Standard/inttypes.h>
 
 #else
